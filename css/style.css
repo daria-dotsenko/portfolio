@@ -1,19 +1,17 @@
-@font-face {
-    font-family: "Inter";
-    src: url(../font/Inter-Regular.ttf);
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Inter";
-    src: url(../font/Inter-Bold.ttf);
-    font-weight: 700;
-    font-style: normal;
-}
-
 body {
-    font-family: "Inter";
+    font-family: 'Inter', sans-serif;
+}
+
+.dark {
+    background-color: #232326;
+    color: #F3F2F0;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .name {
@@ -23,4 +21,20 @@ body {
 .title-h1 {
     font-size: 74px;
     text-transform: uppercase;
+}
+
+.photo {
+    margin-bottom: 120px;
+    width: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #F3F2F0;
+    font-size: 14px;
+
+}
+
+.nav-link:hover {
+    color: #D40000;
 }
