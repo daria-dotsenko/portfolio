@@ -44,8 +44,19 @@ body {
     padding-right: 15px;
 }
 
+.main {
+    position: relative;
+}
+
+.main .title-h1 {
+    position: relative;
+    z-index: 4;
+}
+
 .name {
     font-size: 28px;
+    position: relative;
+    z-index: 3;
 }
 
 .title-h1 {
@@ -126,6 +137,10 @@ header {
     margin-top: 100px;
 }
 
+.social-item:last-child {
+    position: relative;
+}
+
 .project {
     margin: 0;
     display: flex;
@@ -159,14 +174,52 @@ header {
     line-height: 150%;
 }
 
+.section-steps {
+    padding-top: 180px;
+    padding-bottom: 198px;
+}
+
+.steps-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 150%;
+}
+
+.steps-title {
+    font-size: 28px;
+}
+
+.steps-title span {
+    margin-right: 45px;
+}
+
+.steps-description {
+    font-size: 16px;
+}
+
 .circle-main {
-    width: 300px;
-    height: 300px;
+    width: 253px;
+    height: 253px;
+    position: absolute;
+    left: -128px;
+    top: calc(50%-126px);
+    z-index: 1;
+}
+
+.triangle {
+    position: absolute;
+    left: -151px;
+    top: 0;
+    z-index: 2;
 }
 
 .circle-nav {
     width: 106px;
     height: 106px;
+    position: absolute;
+    right: 38px;
+    top: calc(50% - 53px);
 }
 
 
