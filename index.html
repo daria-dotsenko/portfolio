@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <!--    <link rel="stylesheet" href="css/jquery-ui.min.css">-->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -356,6 +356,92 @@
                 </div>
             </div>
         </section>
+        <section class="section-tech">
+            <div class="tech">
+                <div class="tech-item html">
+                    <img class="tech-image" src="img/tech/html.svg" alt="HTML" title="Язык гипертекстовой разметки">
+                </div>
+                <div class="tech-item css">
+                    <img class="tech-image" src="img/tech/css.svg" alt="CSS" title="Каскадные таблицы стилей">
+                </div>
+                <div class="tech-item js">
+                    <img class="tech-image" src="img/tech/JS.svg" alt="JavaScript"
+                         title="Язык программирования высокого уровня, использующийся для придания интерактивности веб-страницам">
+                </div>
+                <div class="tech-item jquery">
+                    <img class="tech-image" src="img/tech/jquery.svg" alt="jQuery"
+                         title="Популярная библиотека JavaScript">
+                </div>
+                <div class="tech-item bootstrap">
+                    <img class="tech-image" src="img/tech/bootstrap.svg" alt="Bootstrap"
+                         title="Популярный CSS фреймворк">
+                </div>
+                <div class="tech-item php">
+                    <img class="tech-image" src="img/tech/php.svg" alt="PHP" title="Серверный язык программирования">
+                </div>
+                <div class="tech-item vue">
+                    <img class="tech-image" src="img/tech/Vue.js.svg" alt="VueJs"
+                         title="JS-фреймворк для создания пользовательских интерфейсов">
+                </div>
+                <div class="tech-item wp">
+                    <img class="tech-image" src="img/tech/Wordpress.svg" alt="WordPress"
+                         title="Популярная CMS для создания блогов">
+                </div>
+            </div>
+<!--            todo разобраться почему изображения растаживаются на всю ячейку-->
+        </section>
+        <section class="section-tarif">
+            <div class="tarif">
+                <div class="tarif-item tarif-title">
+                    <p>Тарифы</p>
+                </div>
+                <div class="tarif-item tarif-description">
+                    Представленные ниже цены зависят не только от того какой сайт вы хотите. Конечная цена будет озвучена после прочтения Вашего ТЗ
+                </div>
+                <div class="tarif-item">
+                    <p class="tarif-name">Разработка лэндинга или сайт визитки</p>
+                    <p class="tarif-text">Небольшой сайт состоящий из одной страницы</p>
+                    <p class="project"><span>Обсудить проект</span><span class="project-img"></span></p>
+                </div>
+                <div class="tarif-item">
+                    <p class="tarif-pack">Что входит</p>
+                    <ul class="tarif-list">
+                        <li class="tarif-list-item">Сайт на CMS WordPress</li>
+                        <li class="tarif-list-item">Одна посадочная страница</li>
+                        <li class="tarif-list-item">От 7 дней</li>
+                    </ul>
+                    <p class="tarif-price">От 7 000 Р</p>
+                </div>
+                <div class="tarif-item">
+                    <p class="tarif-name">Разработка корпоративного сайта</p>
+                    <p class="tarif-text">Небольшой сайт с n-количеством страниц</p>
+                    <p class="project"><span>Обсудить проект</span><span class="project-img"></span></p>
+                </div>
+                <div class="tarif-item">
+                    <p class="tarif-pack">Что входит</p>
+                    <ul class="tarif-list">
+                        <li class="tarif-list-item">Сайт на CMS WordPress</li>
+                        <li class="tarif-list-item">От 2-10 страниц </li>
+                        <li class="tarif-list-item">От 15 дней</li>
+                    </ul>
+                    <p class="tarif-price">От 10 000 Р</p>
+                </div>
+                <div class="tarif-item">
+                    <p class="tarif-name">Разработка интернет - магазина</p>
+                    <p class="tarif-text">Полноценный каталог вашей продукции</p>
+                    <p class="project"><span>Обсудить проект</span><span class="project-img"></span></p>
+                </div>
+                <div class="tarif-item">
+                    <p class="tarif-pack">Что входит</p>
+                    <ul class="tarif-list">
+                        <li class="tarif-list-item">Сайт на CMS WordPress</li>
+                        <li class="tarif-list-item">От 2-10 страниц, корзина, карточка товара</li>
+                        <li class="tarif-list-item">От 20 дней</li>
+                    </ul>
+                    <p class="tarif-price">От 15 000 Р</p>
+                </div>
+            </div>
+        </section>
     </div>
     <footer>
 
@@ -367,6 +453,14 @@
 <script>
     $(function () {
         $("#tabs").tabs({active: 0});
+        $(document).tooltip();
+    });
+    $(".tech-image").tooltip({
+        position: {
+            my: "center top",
+            at: "center bottom-10",
+            collision: "none"
+        }
     });
 </script>
 </body>
