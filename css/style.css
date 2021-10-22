@@ -395,12 +395,14 @@ header {
     padding-left: 0;
     margin: 0;
     position: absolute;
-    top: -41px;
+    top: -62px;
     font-size: 16px;
 }
 
 .nav-tabs-item {
     margin-right: 75px;
+    padding-top: 21px;
+    padding-bottom: 21px;;
 }
 
 .nav-tabs-link {
@@ -410,9 +412,13 @@ header {
     text-decoration: none;
 }
 
-.nav-tabs-link.active {
+.nav-tabs-item.ui-state-active .nav-tabs-link {
     color: #F3F2F0;
     border-bottom: 1px solid #F3F2F0;
+}
+
+.nav-tabs-link:focus {
+    outline: none;
 }
 
 .work {
@@ -473,4 +479,52 @@ header {
     object-fit: cover;
 }
 
+.section-advantages {
+    padding-top: 153px;
+}
 
+.advantages-text {
+    font-size: 28px;
+    line-height: 150%;
+    max-width: 870px;
+}
+
+.advantages {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(3,1fr);
+    grid-gap: 81px 22px;
+    border-top: 1px solid #F3F2F0;
+    padding-top: 80px;
+    margin-top: 83px;
+}
+
+.advantages-item {
+    display: flex;
+    align-items: center;
+}
+
+.advantages-image {
+    margin-right: 40px;
+}
+
+.advantages-image svg {
+    width: 40px;
+    height: 40px;
+}
+
+.advantages-image path {
+    fill: #F3F2F0;
+}
+
+.advantages .title-h3 {
+    margin-top: 0;
+    margin-bottom: 11px;
+}
+
+.advantages-description {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0.8;
+}
