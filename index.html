@@ -443,7 +443,7 @@
                         <p class="tarif-pack">Что входит</p>
                         <ul class="tarif-list">
                             <li class="tarif-list-item">Сайт на CMS WordPress</li>
-                            <li class="tarif-list-item">От 2-10 страниц </li>
+                            <li class="tarif-list-item">От 2-10 страниц</li>
                             <li class="tarif-list-item">От 15 дней</li>
                         </ul>
                     </div>
@@ -478,6 +478,66 @@
                 </div>
             </div>
         </section>
+        <section class="section-form">
+            <div class="form">
+                <div class="form-title">
+                    <svg class="circle circle-form" viewBox="0 0 253 253" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="126.5" cy="126.5" r="126.5"/>
+                    </svg>
+                    <svg class="triangle triangle-form" width="66" height="72" viewBox="0 0 66 72" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33 0L65.909 71.25H0.0910339L33 0Z"/>
+                    </svg>
+                    <p class="form-text">Расскажите<br>о своем проекте</p>
+                </div>
+                <div class="form-description">
+                    <p>Воспользуйтесь формой обратной связи, чтобы обсудить ваш проект, заполните все поля, и я свяжусь
+                        с&nbsp;вами в ближайшее время</p>
+                </div>
+                <div class="form-item form-social">
+                    <ul class="nav nav-social">
+                        <li class="nav-item"><a class="nav-link" href="#" target="_blanck">Vk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" target="_blanck">Instagram</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" target="_blanck">Linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="form-item">
+                    <form>
+                        <label>Телефон или почта</label>
+                        <input type="text" placeholder="Введите телефон">
+                        <label for="communicate">Выберите удобный способ связи</label>
+                        <select name="communicate" id="communicate">
+                            <option selected="selected">Telegram</option>
+                            <option>WhatsApp</option>
+                            <option>Viber</option>
+                            <option>Звонок на телефон</option>
+                            <option>SMS сообщение</option>
+                        </select>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-top">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Обо мне</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Портфолио</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Этапы работ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Цены</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Обратная связь</a></li>
+                    </ul>
+                </nav>
+                <ul class="nav nav-info">
+                    <li class="nav-item"><a class="nav-link" href="tel:+79237777777">8 923 777-77-77</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:alexdev@gmail.com">alexdev@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2020, Все права защищены</p>
+                <p>Сделано в рамках курса учебной платформы <a class="footer-link" href="#">Frontend Blok</a></p>
+            </div>
+        </footer>
     </div>
 
 </div>
@@ -488,6 +548,7 @@
     $(function () {
         $("#tabs").tabs({active: 0});
         $(document).tooltip();
+        $("#communicate").selectmenu();
     });
     $(".tech-image").tooltip({
         position: {
@@ -498,7 +559,4 @@
     });
 </script>
 </body>
-<footer>
-
-</footer>
 </html>
