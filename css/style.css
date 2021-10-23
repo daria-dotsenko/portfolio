@@ -295,6 +295,22 @@ header {
     top: calc(50% - 60px);
 }
 
+.circle-tarif {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: -80px;
+    top: calc(50% - 70px);
+}
+
+.circle-price {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: -46px;
+    top: calc(50% - 45px);
+}
+
 .section-about {
     padding-top: 107px;
 }
@@ -481,7 +497,7 @@ header {
 
 .section-advantages {
     padding-top: 153px;
-    padding-bottom: 100px;
+    padding-bottom: 180px;
 }
 .advantages-text {
     font-size: 28px;
@@ -576,11 +592,21 @@ header {
 
 .tarif {
     display: grid;
-    grid-template: repeat(4, 1fr) / 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-tarif {
+    padding-top: 150px;
 }
 
 .tarif-item {
     border-bottom: 1px solid #F3F2F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 33px;
+    padding-bottom: 61px;
+    height: 268px;
 }
 
 .tarif-title {
@@ -588,12 +614,26 @@ header {
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    position: relative;
+    border-bottom: 1px solid #F3F2F0;
+    padding-top: 5px;
+}
+
+.tarif-title > div {
+    position: relative;
+}
+
+.tarif-title p {
+    position: relative;
+    z-index: 1;
 }
 
 .tarif-description {
     font-size: 28px;
     line-height: 150%;
     opacity: 0.8;
+    border-bottom: 1px solid #F3F2F0;
+    padding-bottom: 51px;
 }
 
 .tarif-name {
@@ -615,6 +655,8 @@ header {
     font-size: 16px;
     line-height: 150%;
     font-weight: 700;
+    margin-top: 28px;
+    margin-bottom: 27px;
 }
 
 .tarif-list {
@@ -625,8 +667,11 @@ header {
 
 .tarif-list-item {
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
+    padding-left: 15px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 200%;
+    opacity: 0.8;
 }
 
 .tarif-list-item::before {
@@ -646,3 +691,14 @@ header {
     font-size: 42px;
     line-height: 150%;
 }
+
+.tarif-footer {
+    position: relative;
+}
+
+.tarif-footer p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+ }
+
